@@ -1,0 +1,39 @@
+from django.db import models
+from django.conf import settings
+from django.utils import timezone
+
+class Book:
+
+    def __init__(self, title, date, authors):
+        self.title = title
+        self.date = date
+        self.price = price
+        if authors is None:
+          self.authors = ()     
+        else:
+            self.authors = authors
+
+Books_list
+    book_name: Хочу и буду,
+    authors: Михаил Лабковский
+    description: (Книга является бестселлером,
+    учит жить по своим правилам жизни ),
+    ,
+    book_name: Как завоевывать друзей и оказывать влияние на людей,
+    authors: Дэйл Карнеги
+    description: (Данная книга является одной из лучших в мире психологии,
+    Учит находить обшщий язык с людьми),
+    ,
+    book_name: Идеальный руководитель,
+    authors: Ицхак Адизес
+    description: (Ицхак Адизес является одним из специалистов менеджмента,
+    в книге описывается код идеального руководителя Адизеса "PAEI"),
+    ,
+     
+
+Books('Хочу и буду', 'Михаил Лобковский', 2017)
+Books('Как завоевывать друзей и оказывать влияние на людей', 'Дейл Брекенридж Карнеги', 1998 )
+Books( 'НИ СЫ',' Джен Синсеро'  2013)
+Books('Идеальный руководитель', 'Ицхак Адизес' 2004)
+
+Books.get_info_all()
